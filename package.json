@@ -1,0 +1,20 @@
+{
+  "name": "ejs",
+  "version": "1.0.0",
+  "description": "learning ejs with nodejs and express",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "4.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ejs",
+    "node",
+    "templating-engine"
+  ],
+  "author": "Mikail Rasheed",
+  "license": "ISC"
+}
