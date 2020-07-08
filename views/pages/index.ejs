@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%include ../partials/head%> 
+    <%include ../partials/head%>
 </head>
+
 <body class="container">
     <header>
-        <%include ../partials/header%> 
+        <%include ../partials/header%>
     </header>
     <main>
         <div class="jumbotron">
             <h1>This is great</h1>
-            <p>Welcome to templating using EJS</p>
+            <p>Welcome to templating using EJS </p>
+            <h2>reusable varialble with EJS</h2>
+            <p><%= myTag %> </p>
         </div>
+
+        <h2>Looping with EjS</h2>
+        <ul>
+            <% drinks.forEach(drink => { %>
+            <li><%= drink.name %> - <%= drink.drunkness %></li>
+
+            <%});%>
+        </ul>
     </main>
     <footer>
-        <%include ../partials/footer%> 
+        <%include ../partials/footer%>
     </footer>
 </body>
+
 </html>

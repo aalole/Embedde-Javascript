@@ -7,11 +7,22 @@ app.set("view engine", "ejs");
 
 //rendering our index page with the view engine
 app.get("/", (req, res) => {
-  res.render("pages/index");
+  let drinks = [
+    { name: "Akinade", drunkness: 3 },
+    { name: "Martin Gero", drunkness: 5 },
+    { name: "Baaqi", drunkness: 6 },
+  ];
+
+  const myTag = "He who does evil evil does";
+
+  res.render("pages/index", {
+    drinks: drinks,
+    myTag: myTag,
+  });
 });
 
 //rendering our about us page with the view engine
-app.get("/", (req, res) => {
+app.get("/about", (req, res) => {
   res.render("pages/about");
 });
 

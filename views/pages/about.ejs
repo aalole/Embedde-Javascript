@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <% include ../partials/head %> 
 </head>
 <body class="container">
-    
+    <header>
+        <% include ../partials/header %> 
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="jumbotron">
+                    <h1>This is interesting</h1>
+                    <p>Welcome to templaing with EJS</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="well">
+                    <h3>Woóo, I am a sidebar!!</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <% include ../partials/footer %> 
+    </footer>
 </body>
 </html>
